@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'slave4' }
+    agent { label 'javaslave' }
     stages {
         stage('clone step') {
             steps {
@@ -14,7 +14,7 @@ pipeline {
   }
       stage('Deploy step') {
             steps {
-                sh 'sudo cp /home/slave4/workspace/deploy1/target/hello-world-war-1.0.0.war /opt/apache-tomcat-9.0.64/webapps/'      
+                sh 'mkdir folder222'      
             }
         }
     }
